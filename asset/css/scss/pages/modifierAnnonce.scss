@@ -1,0 +1,214 @@
+// Conteneur principal de la page "Modifier une annonce" : centré, fond clair, ombré
+.modif-modifier-annonce-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffdf9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+// Titre de la page : centré et bien visible
+.modif-modifier-annonce-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+// Formulaire de modification : disposition en grille avec espacement
+.modif-form-modifier-annonce {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        resize: vertical;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+}
+
+// Bloc du compteur de caractères pour la description
+.compteur-description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #555;
+
+    span {
+        font-weight: bold;
+    }
+
+    .barre-compteur {
+        width: 100%;
+        height: 6px;
+        background-color: #eee;
+        border-radius: 4px;
+        margin-top: 5px;
+        overflow: hidden;
+
+        .barre-remplie {
+            height: 100%;
+            width: 0%;
+            background-color: #f9c349;
+            transition: width 0.3s ease;
+        }
+    }
+}
+
+// Bloc contenant l'aperçu d’image et le champ d’upload
+.modif-input-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+// Image preview : dimensions fixes, style sobre
+.modif-image-preview {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+// Bouton personnalisé pour choisir une image
+.modif-custom-file-upload {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+
+    input[type="file"] {
+        display: none;
+    }
+
+    &:hover {
+        background-color: #444;
+    }
+}
+
+// Bouton de suppression d’image
+.btn-supprimer {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        background-color: #c0392b;
+    }
+}
+
+// Bloc regroupant les boutons image : suppression ou remplacement
+.modif-image-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+// Zone des deux boutons finaux (publier et retour)
+.modif-zone-boutons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+// Boutons : mise en forme générale
+.modif-btn-retour-annonces,
+.modif-btn-publier {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    display: inline-block;
+}
+
+// Bouton retour
+.modif-btn-retour-annonces {
+    background-color: #f9c349;
+    color: #333;
+    border: none;
+
+    &:hover {
+        background-color: #e0ae30;
+    }
+}
+
+// Bouton publier
+.modif-btn-publier {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #555;
+    }
+}
+
+// Mise en page responsive : passage à deux colonnes et alignement horizontal des boutons
+@media (min-width: 768px) {
+    .modif-form-modifier-annonce {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 30px;
+
+        textarea,
+        .compteur-description {
+            grid-column: span 2;
+        }
+    }
+
+    .modif-zone-boutons-vertical {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        grid-column: span 2;
+    }
+
+    .modif-btn-retour-annonces,
+    .modif-btn-publier {
+        min-width: 230px;
+    }
+}

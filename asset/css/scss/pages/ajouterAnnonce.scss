@@ -1,0 +1,239 @@
+.ajouter-annonce-wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+//titre
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px auto 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+// Formulaire principal : centré, avec fond blanc cassé, ombre et disposition verticale
+.ajout-formulaire {
+  width: 90vw;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fffdf9;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  // Version desktop : padding plus large
+  @media (min-width: 768px) {
+    padding: 2rem 2.5rem;
+  }
+
+  // Style des libellés
+  label {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+
+  // Style des champs de saisie (text, number, textarea, select)
+  input[type="text"],
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #fdfdfd;
+    box-sizing: border-box;
+  }
+
+}
+
+
+// Affichage du compteur de caractères pour la description
+.compteur-description {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+// Barre visuelle représentant le remplissage du compteur
+.barre-compteur {
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+// Portion remplie de la barre de progression du compteur
+.barre-remplie {
+  height: 100%;
+  background-color: #f9c349;
+  transition: width 0.3s ease;
+}
+
+// Disposition des champs en grille responsive
+.ajout-grid-champs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 10px;
+
+  // Sur écrans moyens et plus : grille adaptative
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+}
+
+// Zone contenant les blocs d’upload d’images
+.ajout-zone-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+
+  // Disposition en ligne et adaptative sur desktop
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+// Bloc individuel pour une image avec prévisualisation
+.ajout-zone-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  img {
+    width: 100%;
+    max-width: 140px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+}
+
+// Label personnalisé pour les inputs de type file
+.ajout-label-image {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+
+  input {
+    display: none;
+  }
+}
+
+// Bouton rouge pour supprimer une image ajoutée
+.ajout-btn-supprimer {
+  margin: 0;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: #c0392b;
+  }
+}
+
+// Conteneur des deux boutons principaux (retour / publier)
+.ajout-boutons-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+
+  // Réorganisation en ligne sur desktop
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+// Styles communs aux deux boutons (retour et publier)
+.ajout-btn-retour,
+.ajout-btn-publier {
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+}
+
+// Bouton de retour (fond doré clair)
+.ajout-btn-retour {
+  padding: 10px;
+  background-color: #f9c349;
+  color: #333;
+
+  &:hover {
+    background-color: #c89e1a;
+  }
+}
+
+// Bouton de publication (fond noir)
+.ajout-btn-publier {
+  padding: 10px 28px;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+
+  &:hover {
+    background-color: #1a1a1a;
+  }
+}
+
+// Groupe de champs alignés horizontalement sur desktop
+.ajout-champs-ligne {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+
+  // Passage en ligne à partir de 600px
+  @media (min-width: 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  // Bloc de champ individuel (label + champ)
+  .ajout-champ {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+}

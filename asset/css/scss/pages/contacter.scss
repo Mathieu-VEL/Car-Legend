@@ -1,0 +1,134 @@
+// Conteneur principal du module "Contacter" : centré avec fond clair, arrondi, ombre légère et disposition verticale
+.contacter-wrapper {
+  width: 90%;
+  max-width: 430px;
+  margin: 120px auto;
+  background-color: #fffdf9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  // Titre centré avec mise en forme forte, structure horizontale avec un éventuel élément décoratif
+  .contacter-titre {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &::before {
+      content: "";
+      font-size: 1.2rem;
+    }
+  }
+
+  // Encadré contenant les infos du vendeur ou de contact : fond gris clair, bord gauche coloré
+  .contacter-info {
+    background-color: #f8f8f8;
+    padding: 12px 18px;
+    border-left: 4px solid #f9c349;
+    border-radius: 8px;
+    font-size: 0.95rem;
+
+    p {
+      margin: 4px 0;
+    }
+  }
+
+  // Formulaire de contact : disposition en colonne avec espacements
+  .contacter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .contacter-label {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .contacter-textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    // Bouton d'envoi du message : fond doré, texte blanc, animé au survol
+    .btn-contacter-envoyer {
+      background-color: #f9c349;
+      color: white;
+      font-weight: bold;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+
+      &::before {
+        content: "";
+      }
+
+      &:hover {
+        background-color: #c89e1a;
+      }
+    }
+  }
+
+  // Bloc de retour : bouton vers l'accueil ou page précédente
+  .contacter-retour {
+    display: flex;
+    justify-content: flex-start;
+
+    .btn-contacter-retour {
+      background-color: #f9c349;
+      color: #222;
+      font-weight: bold;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+
+      &::before {
+        content: "";
+      }
+
+      &:hover {
+        background-color: #c89e1a;
+      }
+    }
+  }
+}
+
+// Responsive : élargissement progressif du formulaire sur écrans plus larges
+@media (min-width: 576px) {
+  .contacter-wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacter-wrapper {
+    max-width: 650px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contacter-wrapper {
+    max-width: 800px;
+  }
+}

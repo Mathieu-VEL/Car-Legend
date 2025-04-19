@@ -1,0 +1,120 @@
+// Section principale de l'accueil : occupe 70% de la hauteur de l'écran, centre le contenu, fond blanc
+.accueil-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+
+  // Bloc central avec fond blanc cassé, padding et ombre douce
+  .accueil-bloc {
+    background-color: #fffdf9;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  // Titre de l'accueil avec texte doré, empilé verticalement
+  .accueil-titre {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #daa520;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    // Sous-éléments du titre (intro, prénom, nom du site)
+    .texte-intro,
+    .prenom-block,
+    .site-name {
+      color: #daa520;
+      font-weight: 700;
+    }
+
+    .texte-intro {
+      font-size: 1.5rem;
+    }
+
+    .prenom-block {
+      font-size: 1.5rem;
+    }
+
+    .site-name {
+      font-size: 1.6rem;
+    }
+  }
+
+  // Paragraphe descriptif centré sous le titre
+  .accueil-texte {
+    color: #000;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  // Conteneur pour centrer le bouton
+  .accueil-btn-container {
+    display: flex;
+    justify-content: center;
+
+    // Bouton d'accès aux annonces, stylisé avec effet hover
+    .accueil-btn-annonces {
+      background-color: #f9c349;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #c89e1a;
+      }
+    }
+  }
+}
+
+// Version desktop : augmente les espacements et tailles de police
+@media (min-width: 768px) {
+  .accueil-section {
+    padding: 4rem 2rem;
+
+    .accueil-bloc {
+      padding: 3rem;
+    }
+
+    .accueil-titre {
+      font-size: 2rem;
+
+      .texte-intro {
+        font-size: 2rem;
+      }
+
+      .prenom-block {
+        font-size: 2rem;
+      }
+
+      .site-name {
+        font-size: 2.2rem;
+      }
+    }
+
+    .accueil-texte {
+      font-size: 1.1rem;
+    }
+
+    .accueil-btn-annonces {
+      font-size: 1.05rem;
+      padding: 1rem 2rem;
+    }
+  }
+}

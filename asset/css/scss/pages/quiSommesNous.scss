@@ -1,0 +1,72 @@
+// Conteneur principal de la page "Qui sommes-nous" : largeur limitée, centrée, fond clair
+.about-wrapper {
+  padding: 2rem 1rem;
+  background-color: #fffdf9;
+  max-width: 900px;
+  margin: 0 auto;
+
+  // Titre principal de la page
+  h1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #daa520;
+    margin-bottom: 2rem;
+  }
+
+  // Chaque section descriptive (vision, valeurs, mission, etc.)
+  section {
+    margin-bottom: 2rem;
+
+    // Sous-titres des sections
+    h2 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: left !important;
+      display: block;
+      width: 100%;
+    }
+
+    // Paragraphe de contenu
+    p {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    // Liste à puces pour présenter les points clés
+    ul {
+      list-style: disc inside;
+      padding-left: 1rem;
+      color: #444;
+      text-align: left;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+// Version desktop : agrandit les tailles de police et les paddings
+@media (min-width: 768px) {
+  .about-wrapper {
+    padding: 4rem 2rem;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    section {
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p,
+      ul {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}

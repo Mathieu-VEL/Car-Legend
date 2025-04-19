@@ -1,0 +1,15 @@
+/* Réinitialisation générale : ce bloc supprime les marges et les espacements par défaut appliqués par les navigateurs */
+* {
+  margin: 0;
+  /* Supprime toutes les marges extérieures par défaut sur tous les éléments HTML */
+  padding: 0;
+  /* Supprime tous les espacements intérieurs (entre le contenu et la bordure) sur tous les éléments HTML */
+}
+
+/* Classe utilisée pour envelopper le contenu principal d'une page */
+.page-wrapper {
+  margin-top: 300px;
+  /* Ajoute une marge de 300 pixels au-dessus de l'élément pour l'éloigner du haut de la page */
+  /* Cela peut être utile si un header fixe (position: fixed) chevauche le contenu */
+  /* Attention : cette marge fixe n'est pas responsive et peut causer des problèmes sur petits écrans */
+}

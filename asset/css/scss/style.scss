@@ -1,0 +1,41 @@
+// IMPORTS DES STYLES PAR PAGE
+
+// Composants de layout principaux
+@use 'pages/header' as *;
+@use 'pages/footer' as *;
+
+// Pages principales du site (accueil, erreurs, informations)
+@use 'pages/accueil' as *;
+@use 'pages/404' as *;
+@use 'pages/quiSommesNous' as *;
+@use 'pages/rgpd' as *;
+
+// Pages liées aux annonces
+@use 'pages/annonce' as *;
+@use 'pages/ajouterAnnonce' as *;
+@use 'pages/detailAnnonce' as *;
+@use 'pages/favoris' as *;
+@use 'pages/mesAnnonce' as *;
+@use 'pages/modifierAnnonce' as *;
+@use 'pages/suppressionAnnonce' as *;
+@use 'pages/pagination' as *;
+
+// Pages liées à la messagerie ou au contact
+@use 'pages/contacter' as *;
+@use 'pages/message' as *;
+
+// Pages d’authentification utilisateur
+@use 'pages/connexion' as *;
+@use 'pages/inscription' as *;
+@use 'pages/parametres' as *;
+@use 'pages/profil' as *;
+
+// Composants divers
+@use 'pages/alertes' as *;
+@use 'pages/admin' as *;
+@use 'pages/connexionAdmin' as *;
+
+
+// STYLES DE BASE GLOBAUX
+// Import du fichier de style global
+@use 'base/global';

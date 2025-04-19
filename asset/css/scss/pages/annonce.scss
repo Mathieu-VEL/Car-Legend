@@ -1,0 +1,180 @@
+.annonce-wrapper {
+    width: 90%;
+    max-width: 100%;
+    margin: 100px auto;
+    padding-bottom: 100px;
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .annonce-vide {
+        text-align: center;
+        color: #555;
+        font-size: 1.1rem;
+        margin-top: 30px;
+    }
+
+    .annonce-liste {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .annonce-card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        margin: 0 auto;
+        max-width: 360px;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            max-width: 800px;
+        }
+    }
+
+    .annonce-image {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+            width: 220px;
+            flex-shrink: 0;
+        }
+    }
+
+    .annonce-infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+
+        @media (min-width: 768px) {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .annonce-prix {
+            font-size: 1rem;
+            color: #daa520;
+            font-weight: bold;
+        }
+
+        .annonce-marque {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .date-poste {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 10px;
+
+            @media (min-width: 768px) {
+                margin-top: 0;
+            }
+        }
+
+        .favori-lien {
+            .favori-toggle {
+                color: #cc0000;
+                font-weight: bold;
+                text-decoration: none;
+                width: fit-content;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .annonce-actions {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+
+    .annonce-btn-voir {
+        background-color: #f9c349;
+        color: #333;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        width: fit-content;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background-color: #e0ae2f;
+        }
+    }
+
+    .pagination {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        a,
+        span {
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .pagination-link {
+            background-color: #f9c349;
+            color: #222;
+        }
+
+        .pagination-current {
+            background-color: #222;
+            color: #fffdf9;
+        }
+
+        .pagination-prev,
+        .pagination-next {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+    }
+}

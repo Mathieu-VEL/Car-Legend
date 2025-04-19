@@ -1,0 +1,58 @@
+.erreur-404 {
+    min-height: 80vh;
+    padding: 3rem 1rem;
+    background-color: #fffdf9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .contenu-erreur {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #cc0000;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #333;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-retour {
+        display: inline-block;
+        background-color: #daa520;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #c2921d;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .erreur-404 {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .btn-retour {
+            font-size: 1.05rem;
+            padding: 1rem 2rem;
+        }
+    }
+}

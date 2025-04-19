@@ -1,0 +1,68 @@
+// Bloc principal de la popup d’alerte : positionnée en haut au centre de l’écran, masquée par défaut. 
+// Elle utilise une animation pour apparaître puis disparaître automatiquement. 
+// Les variantes `.success` et `.error` définissent des couleurs spécifiques selon le type d’alerte.
+.alerte-popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+    animation: fadeInOut 3s ease forwards;
+    max-width: 90%;
+    text-align: center;
+    cursor: default;
+    transition: background-color 0.3s ease;
+
+    &.show {
+        display: flex !important;
+    }
+
+    &.success {
+        background-color: #2e7d32 !important;
+    }
+
+    &.error {
+        background-color: #c62828 !important;
+    }
+
+    &.info {
+        background-color: #444 !important;
+    }
+
+    &.cachee {
+        display: none;
+    }
+}
+
+
+
+// Animation utilisée pour les alertes : effet d’apparition (fade in) puis disparition (fade out) avec un léger déplacement vertical.
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+}

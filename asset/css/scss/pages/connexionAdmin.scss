@@ -1,0 +1,86 @@
+// Conteneur principal du formulaire admin : centré, avec fond clair, bord arrondi et ombre douce
+.connexion-admin-section {
+  max-width: 430px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #fffdf9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+// Titre principal du bloc de connexion
+.connexion-admin-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+// Formulaire de connexion admin : champs empilés avec espacement vertical
+.connexion-admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  // Bouton de soumission : fond doré, texte blanc, arrondi, avec effet au survol
+  button {
+    padding: 0.8rem;
+    background-color: #daa520;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #c9991e;
+    }
+  }
+}
+
+// Message d’erreur affiché en cas d’identifiants invalides : fond rouge clair, texte rouge vif
+.connexion-admin-error {
+  background-color: #ffe0e0;
+  color: #c62828;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+// Lien de retour (ex : vers l’accueil ou une autre page) placé sous le formulaire
+.connexion-admin-retour {
+  margin-top: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Adaptation desktop : formulaire plus large et texte légèrement agrandi
+@media (min-width: 768px) {
+  .connexion-admin-section {
+    max-width: 500px;
+    padding: 2.5rem;
+  }
+
+  .connexion-admin-form input,
+  .connexion-admin-form button {
+    font-size: 1.05rem;
+  }
+}

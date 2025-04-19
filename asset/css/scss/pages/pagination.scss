@@ -1,0 +1,34 @@
+// Conteneur de la pagination : centré avec un espace au-dessus
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+
+  // Style commun aux liens de page (et au span actif)
+  a,
+  span {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background: #f9c349;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  // Élément actif de la pagination (page en cours)
+  .pagination-current {
+    background: #333;
+    color: #fff;
+  }
+
+  // Liens précédent / suivant (avec style un peu plus grand)
+  .pagination-prev,
+  .pagination-next {
+    font-size: 1.2rem;
+  }
+}

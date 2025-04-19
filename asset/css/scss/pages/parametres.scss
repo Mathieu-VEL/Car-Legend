@@ -1,0 +1,228 @@
+// Conteneur principal de la page des paramètres : centré, avec padding
+.param-wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+// Titre principal : centré, taille moyenne
+.param-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+// Formulaire principal de modification du profil : fond clair, espacé et arrondi
+.param-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fffdf9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    input[type="text"],
+    input[type="submit"],
+    label,
+    .param-avatar-info,
+    .param-avatar-preview,
+    .param-avatar-circle,
+    .param-avatar-upload,
+    .param-btn-retour,
+    .param-delete-btn {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+// Bloc contenant l’avatar : position centré avec bouton de modification
+.param-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+// Affichage de l’avatar actuel sous forme circulaire
+.param-avatar-preview,
+.param-avatar-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #daa520;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: #f9c349;
+    color: #fff;
+}
+
+// Bouton flottant pour téléverser une nouvelle image (icône modif)
+.param-avatar-upload {
+    position: absolute;
+    bottom: 50px;
+    left: 54%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+    z-index: 10;
+}
+
+// Texte informatif sous l’avatar
+.param-avatar-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+    max-width: 280px;
+}
+
+// Bloc de champs de saisie du profil
+.param-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+// Labels des champs
+.param-inputs label {
+    font-weight: bold;
+    color: #333;
+}
+
+// Champs de texte
+.param-inputs input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+// Bouton de validation des modifications
+.param-submit {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #f9c349;
+    color: #222;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e0ae30;
+    }
+}
+
+// Bouton de retour au profil
+.param-btn-retour {
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #ccc;
+    color: #222;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #bbb;
+    }
+}
+
+// Bouton de suppression de compte
+.param-delete-btn {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #c0392b;
+    }
+}
+
+// Popup de confirmation de suppression de compte
+.popup-confirmation {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.cachee {
+        display: none;
+    }
+
+    .popup-contenu {
+        background: white;
+        padding: 25px 30px;
+        border-radius: 12px;
+        text-align: center;
+        max-width: 90%;
+        width: 320px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-confirmation,
+        .btn-annulation {
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .btn-confirmation {
+            background-color: #e74c3c;
+            color: #fff;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: #c0392b;
+            }
+        }
+
+        .btn-annulation {
+            background-color: #ccc;
+            color: #222;
+
+            &:hover {
+                background-color: #bbb;
+            }
+        }
+    }
+}

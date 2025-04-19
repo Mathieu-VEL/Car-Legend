@@ -1,0 +1,201 @@
+// Conteneur principal des favoris : centrage, largeur adaptative, espacements
+.mes-favoris-wrapper {
+  width: 90%;
+  max-width: 100%;
+  margin: 100px auto;
+  padding-bottom: 100px;
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .mes-favoris-vide {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 30px;
+  }
+}
+
+// Liste des cartes de favoris : disposition en colonne avec espacement
+.mes-favoris-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+// Carte individuelle d’annonce favorite : style de carte simple et responsive
+.mes-favoris-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 360px;
+  width: 100%;
+  transition: none;
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+// Bloc image dans la carte
+.mes-favoris-image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+}
+
+// Bloc contenant les infos textuelles
+.mes-favoris-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+}
+
+// Prix de l’annonce
+.mes-favoris-prix {
+  font-size: 1rem;
+  color: #daa520;
+  font-weight: bold;
+}
+
+// Marque du véhicule
+.annonce-marque {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+// Date de publication
+.date-poste {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+// Bloc des actions (boutons voir/retirer)
+.mes-favoris-actions {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+// Bouton "voir l’annonce"
+.mes-favoris-btn-voir {
+  background-color: #f9c349;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+
+  &:hover {
+    background-color: #e0ae2f;
+  }
+}
+
+// Bouton "retirer des favoris"
+.mes-favoris-btn-retirer {
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Bloc de pagination responsive (adapté mobile)
+.pagination {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  a,
+  span {
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+
+  .pagination-link {
+    background-color: #f9c349;
+    color: #222;
+  }
+
+  .pagination-current {
+    background-color: #222;
+    color: #fffdf9;
+  }
+
+  .pagination-prev,
+  .pagination-next {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+}
+
+// Version desktop : cartes en ligne avec image à gauche, infos à droite
+@media (min-width: 768px) {
+  .mes-favoris-carte {
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+
+    .mes-favoris-image {
+      width: 220px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .mes-favoris-infos {
+      flex: 1;
+      padding-left: 20px;
+    }
+
+    &:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+  }
+
+  .mes-favoris-actions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .date-poste {
+    margin-top: 0;
+  }
+}
