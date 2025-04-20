@@ -1,20 +1,20 @@
-# CAR LEGEND
+CAR LEGEND
 
-**Plateforme de vente de voitures anciennes** – Projet de fin de formation  
-_Titre RNCP 37273 – Développeur Web Full-Stack_  
+Plateforme de vente de voitures anciennes – Projet de fin de formation  
+Titre RNCP 37273 – Développeur Web Full-Stack
 Candidat : Mathieu Chaltane  
 Session : Juin 2025  
 
 ---
 
-## Description
+Description
 
-**Car Legend** est un site web dédié à la vente de véhicules anciens.  
+Car Legend est un site web dédié à la vente de véhicules anciens.  
 Il permet aux passionnés, collectionneurs et professionnels de publier et consulter des annonces, de gérer leurs favoris, d’échanger par messagerie interne, et d’enrichir les fiches avec des données techniques via l’API CarQuery.
 
 ---
 
-## Fonctionnalités principales
+Fonctionnalités principales
 
 - Authentification (inscription, connexion, déconnexion)
 - Gestion des annonces (ajout, modification, suppression)
@@ -29,136 +29,72 @@ Il permet aux passionnés, collectionneurs et professionnels de publier et consu
 
 ---
 
-## Technologies utilisées
+Technologies utilisées
 
 - HTML5 / SCSS / JavaScript (Vanilla)
 - PHP procédural avec architecture MVC personnalisée
 - MySQL + PDO
-- API externe : [CarQuery API](https://www.carqueryapi.com/)
+- API externe : CarQuery API https://www.carqueryapi.com/
 - Aucune librairie JS (tout codé manuellement)
-- Compilation SCSS via `sass --watch`
+- Compilation SCSS via  sass --watch 
 
 ---
 
-## Arborescence du projet
+Arborescence du projet
 
 PROJET-FINAL/
 ├── index.php
-├── BD.sql
 ├── .htaccess
-│
-│
 ├── asset/
 │   ├── css/
 │   │   ├── dist/
-│   │   │   ├── style.css
-│   │   │   └── style.css.map
 │   │   └── scss/
-│   │       ├── style.scss
 │   │       ├── base/
-│   │       │   └── global.scss
 │   │       └── pages/
-│   │           ├── 404.scss
-│   │           ├── accueil.scss
-│   │           ├── admin.scss
-│   │           ├── ajouterAnnonce.scss
-│   │           ├── alertes.scss
-│   │           ├── annonce.scss
-│   │           ├── connexion.scss
-│   │           ├── connexionAdmin.scss
-│   │           ├── contacter.scss
-│   │           ├── detailAnnonce.scss
-│   │           ├── favoris.scss
-│   │           ├── footer.scss
-│   │           ├── header.scss
-│   │           ├── inscription.scss
-│   │           ├── mesAnnonce.scss
-│   │           ├── message.scss
-│   │           ├── modifierAnnonce.scss
-│   │           ├── pagination.scss
-│   │           ├── parametres.scss
-│   │           ├── profil.scss
-│   │           ├── quiSommesNous.scss
-│   │           ├── rgpd.scss
-│   │           └── suppressionAnnonce.scss
-│   │
+│   │ 
 │   ├── js/
-│   │   ├── ajouteAnnonce.js
-│   │   ├── alerteAnnoncePublie.js
-│   │   ├── alerteInscription.js
-│   │   ├── alerteProfile.js
-│   │   ├── alertes.js
-│   │   ├── api.js
-│   │   ├── favoris.js
-│   │   ├── formulaire.js
-│   │   ├── modificationSucces.js
-│   │   ├── modifierAnnonce.js
-│   │   ├── popupSuppressionCompte.js
-│   │   ├── suppressionAnnonce.js
-│   │   └── validationAnnonce.js
-│   │
 │   ├── images/
 │   └── photos/
-│
+│ 
 ├── controleur/
-│   ├── admin.php
-│   ├── config.php
-│   ├── connexion.php
-│   ├── connexionAdmin.php
-│   ├── controleAccueil.php
-│   ├── controleAnnonce.php
-│   ├── controleErreur.php
-│   ├── controleFavoris.php
-│   ├── controleMessage.php
-│   ├── controleUtilisateur.php
-│   ├── deconnexion.php
-│   ├── inscription.php
-│   ├── routage.php
-│   └── traitementConnexionAdmin.php
-│
 ├── modele/
-│   ├── authentification.php
-│   ├── bd.annonce.php
-│   ├── bd.favoris.php
-│   ├── bd.message.php
-│   ├── bd.php
-│   ├── bd.utilisateur.php
-│   └── uploadImage.php
-│
 ├── vue/
 │   ├── admin/
-│   │   ├── vueAdmin.php
-│   │   └── vueConnexionAdmin.php
 │   ├── annonce/
-│   │   ├── vueAjouterAnnonce.php
-│   │   ├── vueAnnonce.php
-│   │   ├── vueDetailAnnonce.php
-│   │   ├── vueFavoris.php
-│   │   ├── vueMesAnnonces.php
-│   │   └── vueModifierAnnonce.php
 │   ├── commun/
-│   │   ├── footer.php
-│   │   ├── header.php
-│   │   ├── vue404.php
-│   │   ├── vueAccueil.php
-│   │   ├── vueRGPD.php
-│   │   └── vueQuiSommesNous.php
 │   ├── message/
-│   │   ├── vueContacter.php
-│   │   ├── vueConversations.php
-│   │   └── vueMessagerie.php
 │   └── utilisateur/
-│       ├── vueConnexion.php
-│       ├── vueDeconnexion.php
-│       ├── vueInscription.php
-│       ├── vueParametres.php
-│       └── vueProfile.php
 
 
----
 
-## Installation
+Base de données
+
+Voici la structure minimale pour initialiser la base de données (fichier complet dans BD.sql)
+
+
+CREATE TABLE utilisateur (
+   id_utilisateur INT AUTO_INCREMENT PRIMARY KEY,
+   email VARCHAR(50) NOT NULL UNIQUE,
+   password VARCHAR(100) NOT NULL,
+   nom VARCHAR(50) NOT NULL,
+   prenom VARCHAR(50),
+   role ENUM('admin', 'utilisateur', 'visiteur') NOT NULL,
+   date_inscription DATE NOT NULL,
+   avatar VARCHAR(255)
+);
+
+Installation
 
 1. Cloner le repo :
-```bash
+
 git clone https://github.com/Mathieu-VEL/Car-Legend.git
+
+
+
+Déploiement
+
+Le projet est également disponible en ligne à l'adresse suivante :
+
+https://stagiaires-kercode9.greta-bretagne-sud.org/mathieu-chaltane/projet-final/index.php?page=accueil
+
+
