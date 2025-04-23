@@ -6,10 +6,20 @@
   /* Supprime tous les espacements intérieurs (entre le contenu et la bordure) sur tous les éléments HTML */
 }
 
-/* Classe utilisée pour envelopper le contenu principal d'une page */
+/* Classe utilisée pour le footer */
 .page-wrapper {
-  margin-top: 300px;
-  /* Ajoute une marge de 300 pixels au-dessus de l'élément pour l'éloigner du haut de la page */
-  /* Cela peut être utile si un header fixe (position: fixed) chevauche le contenu */
-  /* Attention : cette marge fixe n'est pas responsive et peut causer des problèmes sur petits écrans */
+  margin-top: 400px;
+}
+
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../../font/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'PlayfairDisplay', serif;
 }

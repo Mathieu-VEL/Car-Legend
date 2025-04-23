@@ -28,3 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Enlève le ? si la chaîne se termine par "?"
   );
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit chargé
+// URLSearchParams() | Lire et manipuler les paramètres dans l’URL
+// params.get() | Obtenir la valeur d’un paramètre d’URL
+// params.delete() | Supprimer un paramètre d’URL
+// params.toString() | Convertir l’ensemble des paramètres en chaîne
+// window.location.search | Accéder aux paramètres de l’URL
+// window.location.pathname | Accéder au chemin de la page (sans les paramètres)
+// window.history.replaceState() | Modifier l’URL dans la barre d’adresse sans recharger la page
+// String.prototype.endsWith() | Vérifier si une chaîne se termine par une sous-chaîne
+// String.prototype.slice() | Extraire une portion d’une chaîne de caractères
+// typeof | Vérifier le type d’une variable ou fonction

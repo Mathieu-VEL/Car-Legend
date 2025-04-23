@@ -13,3 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     header.classList.toggle("open");
   });
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit entièrement chargé
+// document.getElementById() | Sélectionner un élément HTML par son identifiant
+// document.querySelector() | Sélectionner un élément HTML par son sélecteur CSS
+// element.addEventListener() | Attacher un gestionnaire d’événement
+// element.classList.toggle() | Ajouter ou retirer une classe CSS dynamiquement

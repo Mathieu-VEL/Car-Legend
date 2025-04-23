@@ -37,3 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit complètement chargé
+// document.getElementById() | Sélectionner un élément HTML par son identifiant
+// document.querySelector() | Sélectionner le premier élément correspondant à un sélecteur CSS
+// document.querySelectorAll() | Sélectionner tous les éléments correspondant à un sélecteur CSS
+// NodeList.prototype.forEach() | Parcourir une liste de nœuds (résultat de querySelectorAll)
+// element.addEventListener() | Attacher un gestionnaire d’événement (ici click)
+// element.src | Modifier ou lire la source d’une image
+// element.classList.add() | Ajouter une classe CSS à un élément
+// element.classList.remove() | Supprimer une classe CSS d’un élément
+// event.target | Obtenir l’élément exact cliqué lors d’un événement

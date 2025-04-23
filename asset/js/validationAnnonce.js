@@ -54,3 +54,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+// Méthode / Propriété | Rôle
+// document.addEventListener() | Attendre que le DOM soit complètement chargé
+// document.getElementById() | Sélectionner un élément HTML par son identifiant
+// element.getAttribute() | Lire la valeur d’un attribut HTML
+// element.textContent | Lire ou modifier le texte affiché d’un élément
+// element.style.width | Définir dynamiquement la largeur CSS d’un élément
+// element.style.backgroundColor | Modifier dynamiquement la couleur de fond d’un élément
+// element.addEventListener() | Attacher un gestionnaire d’événement (input, submit)
+// element.value | Obtenir ou définir la valeur d’un champ de formulaire
+// String.prototype.trim() | Supprimer les espaces autour d’une chaîne
+// parseInt() | Convertir une chaîne en entier
+// parseFloat() | Convertir une chaîne en nombre décimal
+// isNaN() | Vérifier si une valeur n’est pas un nombre valide
+// new Date().getFullYear() | Récupérer l’année actuelle
+// event.preventDefault() | Empêcher l’envoi du formulaire si une erreur est détectée

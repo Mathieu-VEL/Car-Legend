@@ -37,11 +37,9 @@
   margin: 0 auto;
   max-width: 360px;
   width: 100%;
-  transition: none;
 
   &:hover {
     box-shadow: none;
-    transform: none;
   }
 }
 
@@ -184,7 +182,6 @@
 
     &:hover {
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-      transform: translateY(-5px);
     }
   }
 

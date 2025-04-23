@@ -34,3 +34,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit entièrement chargé
+// document.querySelectorAll() | Sélectionner tous les éléments correspondant à un sélecteur CSS
+// element.forEach() | Parcourir une collection d’éléments HTML
+// element.addEventListener() | Attacher un événement à un élément HTML
+// event.preventDefault() | Empêcher le comportement par défaut (ex : navigation lien)
+// element.dataset | Accéder aux données personnalisées (data-*) d’un élément HTML
+// document.getElementById() | Sélectionner un élément par son identifiant
+// element.href | Lire ou modifier l’URL cible d’un lien <a>
+// element.classList.remove() | Supprimer une ou plusieurs classes CSS d’un élément
+// element.classList.add() | Ajouter une ou plusieurs classes CSS à un élément
+// element.focus() | Donner le focus clavier à un élément (accessibilité)
+// element.onclick | Définir une action à exécuter lors d’un clic

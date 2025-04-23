@@ -40,3 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
     cleanUrl.endsWith("?") ? cleanUrl.slice(0, -1) : cleanUrl
   );
 });
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit chargé
+// URLSearchParams() | Lire et manipuler les paramètres de l’URL
+// params.get() | Obtenir la valeur d’un paramètre d’URL
+// params.delete() | Supprimer un paramètre d’URL
+// params.toString() | Convertir les paramètres en chaîne
+// window.location.search | Obtenir la chaîne de requête de l’URL
+// window.location.pathname | Obtenir le chemin de l’URL actuelle
+// String.prototype.endsWith() | Vérifier si une chaîne se termine par une sous-chaîne
+// String.prototype.slice() | Extraire une portion d’une chaîne
+// window.history.replaceState() | Modifier l’URL sans recharger la page
+// document.title | Récupérer le titre actuel de la page
+// typeof | Vérifier le type d’une variable ou fonction

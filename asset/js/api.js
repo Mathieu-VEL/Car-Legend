@@ -122,3 +122,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit complètement chargé
+// document.getElementById() | Sélectionner un élément HTML par son identifiant
+// document.createElement() | Créer dynamiquement un élément HTML
+// element.appendChild() | Ajouter un élément enfant dans un autre élément
+// element.textContent | Définir ou obtenir le contenu texte d’un élément
+// element.innerHTML | Modifier ou lire le contenu HTML brut d’un élément
+// element.value | Lire ou modifier la valeur d’un champ de formulaire
+// element.setAttribute() | Ajouter ou modifier un attribut HTML
+// element.removeAttribute() | Supprimer un attribut HTML
+// element.addEventListener() | Attacher un gestionnaire d’événement (change, click, etc.)
+// URLSearchParams() | Lire et manipuler les paramètres d’URL
+// encodeURIComponent() | Encoder une URL ou une portion pour transmission réseau
+// fetch() | Envoyer une requête réseau (asynchrone)
+// response.json() | Convertir la réponse HTTP en JSON
+// Promise.then() | Gérer les résultats d’une opération asynchrone réussie
+// Promise.catch() | Gérer les erreurs d’une opération asynchrone
+// Array.prototype.forEach() | Parcourir chaque élément d’un tableau
+// if (!condition) return | Quitter une fonction ou un bloc si une condition n’est pas remplie

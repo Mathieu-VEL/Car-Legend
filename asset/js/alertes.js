@@ -64,3 +64,22 @@ document.addEventListener("DOMContentLoaded", () => {
     alertDiv.remove(); // Supprime le bloc HTML une fois le message traité pour éviter une double alerte
   }
 });
+
+
+
+// Méthode / Propriété
+// function nom() | Définir une fonction
+// document.querySelector() | Sélectionner le premier élément correspondant à un sélecteur
+// document.getElementById() | Sélectionner un élément HTML par son id
+// element.querySelector() | Sélectionner un enfant d’un élément via un sélecteur CSS
+// document.createElement() | Créer dynamiquement un élément HTML
+// element.appendChild() | Ajouter un élément dans le DOM
+// element.textContent | Définir ou lire le contenu textuel d’un élément
+// element.classList.add() | Ajouter une ou plusieurs classes CSS
+// element.classList.remove() | Supprimer une ou plusieurs classes CSS
+// switch / case | Exécuter un bloc différent selon une valeur
+// setTimeout() | Exécuter une fonction après un délai
+// typeof | Vérifier le type d’une variable ou fonction
+// element.dataset | Accéder aux attributs data-* personnalisés
+// element.remove() | Supprimer un élément du DOM
+// document.addEventListener() | Attacher un écouteur d’événement (ici DOMContentLoaded)

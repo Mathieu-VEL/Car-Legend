@@ -72,3 +72,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit complètement chargé
+// document.querySelectorAll() | Sélectionner tous les éléments correspondant à un sélecteur CSS
+// NodeList.prototype.forEach() | Parcourir une liste de nœuds HTML
+// element.addEventListener() | Attacher un gestionnaire d’événement
+// event.preventDefault() | Annuler le comportement par défaut de l’événement
+// element.dataset | Accéder aux attributs personnalisés data-*
+// fetch() | Envoyer une requête réseau HTTP asynchrone
+// response.text() | Lire la réponse serveur comme texte brut
+// Promise.then() | Exécuter une action après une réponse réussie
+// Promise.catch() | Gérer les erreurs dans une requête asynchrone
+// String.prototype.includes() | Vérifier si une chaîne contient une sous-chaîne
+// typeof | Vérifier le type d’une variable ou fonction
+// element.innerText | Lire ou modifier le texte visible d’un élément HTML
+// element.classList.add() | Ajouter une ou plusieurs classes CSS
+// element.classList.remove() | Retirer une ou plusieurs classes CSS
+// setTimeout() | Retarder l’exécution d’un bloc de code après un délai
+// console.error() | Afficher une erreur dans la console de développement

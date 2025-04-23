@@ -20,3 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     popup.classList.add("cachee"); // remet la classe qui cache la popup
   });
 });
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit entièrement chargé
+// document.getElementById() | Sélectionner un élément par son identifiant
+// element.addEventListener() | Attacher un événement à un élément HTML
+// element.classList.add() | Ajouter une ou plusieurs classes CSS à un élément
+// element.classList.remove() | Retirer une ou plusieurs classes CSS d’un élément

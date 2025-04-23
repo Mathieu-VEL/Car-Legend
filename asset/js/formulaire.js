@@ -72,3 +72,19 @@ document.addEventListener("DOMContentLoaded", function () {
       : critereSpecial.classList.remove("valid");
   });
 });
+
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit chargé
+// document.querySelector() | Sélectionner un élément avec un sélecteur CSS
+// document.getElementById() | Sélectionner un élément par son id
+// element.addEventListener() | Attacher un gestionnaire d’événement (ici submit, input)
+// event.preventDefault() | Empêcher l’action par défaut (ex : envoi de formulaire)
+// element.value | Lire ou modifier la valeur d’un champ de formulaire
+// RegExp.prototype.test() | Tester si une chaîne respecte une expression régulière
+// String.prototype.length | Obtenir la longueur d’une chaîne de caractères
+// element.classList.add() | Ajouter une ou plusieurs classes CSS
+// element.classList.remove() | Supprimer une ou plusieurs classes CSS
+// typeof | Vérifier le type d’une variable ou fonction
+// ? : (opérateur ternaire) | Effectuer un test logique rapide (condition ? siVrai : siFaux)

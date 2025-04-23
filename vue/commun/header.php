@@ -15,6 +15,7 @@ $utilisateur = $_SESSION['utilisateur'] ?? null;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/images/favicon.ico" type="image/x-icon">
     <title><?= $titreSite; ?></title>
 
     <?php // feuille de style principale compilée depuis SCSS 
@@ -32,7 +33,7 @@ $utilisateur = $_SESSION['utilisateur'] ?? null;
     <script src="asset/js/modificationSucces.js" defer></script>
     <script src="asset/js/suppressionAnnonce.js" defer></script>
     <script src="asset/js/alerteAnnoncePublie.js" defer></script>
-    <script src="asset/js/alerteProfile.js" defer></script>
+    <script src="asset/js/alerteProfil.js" defer></script>
     <script src="asset/js/popupSuppressionCompte.js" defer></script>
     <script src="asset/js/formulaire.js" defer></script>
     <script src="asset/js/api.js" defer></script>
@@ -93,8 +94,9 @@ $utilisateur = $_SESSION['utilisateur'] ?? null;
                 </div>
 
                 <div class="nav-right">
-                    <a href="index.php?page=favoris"><br><small>Favoris</small></a>
-                    <a href="index.php?page=messages"><br><small>Messages</small></a>
+                    <a href="index.php?page=favoris" class="menu-lien">Favoris</a>
+                    <a href="index.php?page=messages" class="menu-lien">Messages</a>
+
 
                     <?php // affichage avatar ou lien de connexion 
                     ?>

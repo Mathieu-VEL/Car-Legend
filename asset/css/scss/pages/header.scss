@@ -138,10 +138,9 @@
 
         a {
             background-color: #f9c349;
-            color: #fff;
+            color: #000000;
             padding: 0.5rem 1rem;
             border-radius: 8px;
-            font-weight: 600;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -150,6 +149,19 @@
 
             &:hover {
                 background-color: #c89e1a;
+            }
+        }
+
+        .menu-lien {
+            font-size: 1rem; // augmente ici si tu veux encore plus grand (1.1rem ou 1.2rem)
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+            padding: 0.2rem 0;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -192,7 +204,6 @@
 
             span {
                 font-size: 0.9rem;
-                font-weight: bold;
             }
         }
     }

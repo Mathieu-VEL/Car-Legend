@@ -83,7 +83,7 @@ require_once(RACINE . "/vue/commun/header.php");
         </div>
 
         <div id="comparaison-api" class="resultats-api">
-            <p>Sélectionnez un véhicule pour voir les détails.</p>
+            <p>Sélectionnez une année, une marque et un modèle pour lancer la recherche. Si aucun modèle n’est disponible, cela signifie qu’aucun modèle n’existe pour la combinaison choisie.</p>
         </div>
     </div>
 

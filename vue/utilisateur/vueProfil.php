@@ -61,7 +61,7 @@ require_once(RACINE . "/vue/commun/header.php");
             <p>Voir les annonces que j'ai aimées</p>
         </a>
         <a href="index.php?page=parametres" class="profil-card">
-            <h3>Paramètres profile</h3>
+            <h3>Paramètres profil</h3>
             <p>Modifier mes informations</p>
         </a>
     </div>

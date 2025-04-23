@@ -66,3 +66,28 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 });
+
+
+
+// Méthode / Propriété
+// document.addEventListener() | Attendre que le DOM soit chargé
+// Array.prototype.forEach() | Parcourir un tableau
+// document.getElementById() | Sélectionner un élément HTML par son id
+// element.addEventListener() | Attacher un événement à un élément (ex. change, click)
+// input.files | Accéder aux fichiers sélectionnés via un input type file
+// FileReader() | Lire un fichier local côté client
+// reader.onload | Définir une action après lecture du fichier
+// reader.readAsDataURL() | Convertir un fichier en base64 pour affichage
+// element.src | Modifier la source d’une image (<img>)
+// element.style.display | Modifier dynamiquement le style d’affichage
+// input.value | Réinitialiser le champ d’entrée
+// URLSearchParams() | Lire et manipuler les paramètres de l’URL
+// params.get() | Obtenir la valeur d’un paramètre d’URL
+// params.delete() | Supprimer un paramètre d’URL
+// params.toString() | Convertir les paramètres en chaîne
+// window.location.pathname | Obtenir le chemin de l’URL actuelle
+// window.location.search | Obtenir les paramètres de requête de l’URL
+// String.prototype.endsWith() | Vérifier si une chaîne se termine par une sous-chaîne
+// String.prototype.slice() | Extraire une portion d’une chaîne
+// window.history.replaceState() | Modifier l’URL sans recharger la page
+// typeof | Vérifier le type d’une variable ou fonction
