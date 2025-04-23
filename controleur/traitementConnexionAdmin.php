@@ -31,3 +31,16 @@ function traiterConnexionAdmin()
     header("Location: ../index.php?page=connexionAdmin&erreur=1");  // Redirige avec un paramètre d'erreur
     exit;  // Termine l'exécution
 }
+
+
+
+
+// Fonction PHP	Description
+// session_start()	Démarre une session ou reprend une session existante
+// require_once()	Inclut un fichier PHP une seule fois (ici : config et authentification)
+// $_SERVER['REQUEST_METHOD']	Vérifie la méthode de la requête HTTP (ici pour détecter un POST)
+// $_POST	Récupère les données envoyées via formulaire
+// verifierConnexion()	Fonction custom (définie dans authentification.php) pour valider un login
+// $_SESSION	Stocke des données persistantes pendant la session (ici, l'utilisateur connecté)
+// header("Location:")	Redirige l'utilisateur vers une autre page
+// exit	Termine immédiatement l’exécution du script PHP

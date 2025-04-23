@@ -355,3 +355,26 @@ function nettoyerImagesOrphelinesManuellement()
         exit;
     }
 }
+
+
+
+// Fonction PHP	Description
+// require_once()	Importe un fichier PHP externe une seule fois (fichiers de modèles, outils, etc.).
+// $_GET['...'] ?? valeur	Récupère un paramètre GET ou retourne une valeur par défaut s’il n’existe pas.
+// $_POST['...'] ?? valeur	Récupère un paramètre POST ou retourne une valeur par défaut s’il n’existe pas.
+// $_SERVER["REQUEST_METHOD"]	Récupère la méthode HTTP utilisée pour la requête (GET, POST, etc.).
+// in_array(valeur, tableau)	Vérifie si une valeur est présente dans un tableau.
+// isset()	Vérifie si une variable ou un index de tableau est défini.
+// intval()	Convertit une valeur en entier (sécurisation de l’ID ou des champs numériques).
+// floatval()	Convertit une valeur en nombre à virgule flottante (ex : pour le prix).
+// trim()	Supprime les espaces en début et fin de chaîne (nettoyage des champs texte).
+// empty()	Vérifie si une variable est vide.
+// uploadImage()	Fonction personnalisée pour uploader une image (validation, nommage, etc.).
+// exit	Stoppe l’exécution du script immédiatement.
+// header("Location: ...")	Effectue une redirection HTTP vers une autre page.
+// date("Y-m-d")	Renvoie la date actuelle au format AAAA-MM-JJ.
+// ceil()	Arrondit un nombre à l’entier supérieur (utile pour les pages de pagination).
+// max(val1, val2)	Renvoie la plus grande des deux valeurs (pour éviter des pages < 1 en pagination).
+// count()	Retourne le nombre d’éléments dans un tableau (ex: annonces, messages...).
+// $_SESSION['...']	Stocke ou récupère une variable de session (messages flash, données utilisateur).
+// include()	Inclut un fichier PHP (vue HTML, souvent utilisée pour afficher des formulaires).

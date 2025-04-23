@@ -67,3 +67,17 @@ function setMessageEtRediriger($texte, $type, $page = 'connexion')
     // Stoppe l'exécution du script après la redirection
     exit;
 }
+
+
+
+// Fonction PHP	Description
+// session_status()	Vérifie l’état actuel de la session PHP (active, inactive…).
+// session_start()	Démarre une session PHP si aucune session n'est déjà active.
+// require_once()	Inclut un fichier externe une seule fois (même si appelé plusieurs fois).
+// $_SERVER	Tableau superglobal contenant des informations sur l'environnement serveur (ici méthode POST).
+// $_POST	Récupère les données envoyées par un formulaire en POST.
+// htmlspecialchars()	Convertit les caractères spéciaux en entités HTML pour éviter les attaques XSS.
+// trim()	Supprime les espaces en début et fin de chaîne.
+// empty()	Vérifie si une variable est vide.
+// header()	Envoie un en-tête HTTP, ici pour rediriger vers une autre page.
+// exit	Interrompt immédiatement l'exécution du script.

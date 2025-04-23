@@ -146,3 +146,18 @@ function afficherMessagerie($idUtilisateur)
     include(RACINE . "/vue/message/vueMessagerie.php");
     exit;
 }
+
+
+
+
+
+// Fonction PHP	Description
+// require_once()	Inclut les fichiers nécessaires (modèles, utilitaires, etc.)
+// $_SESSION[...]	Accède à la session pour l’utilisateur connecté ou pour définir un message flash
+// $_GET[...] / $_POST[...]	Récupère les données envoyées par l’URL ou le formulaire
+// isset()	Vérifie la présence d’une variable ou d’une clé dans un tableau
+// trim()	Supprime les espaces inutiles autour du contenu du message
+// header("Location: ...")	Redirige vers une autre page (ex : messagerie, annonces, etc.)
+// exit	Stoppe l’exécution du script immédiatement
+// (int)	Force le typage en entier pour sécuriser les ID passés par l’utilisateur
+// include()	Inclut une vue spécifique (formulaire ou messagerie)

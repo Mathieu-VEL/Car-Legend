@@ -28,3 +28,12 @@ function gererErreur()
     // Inclusion de la vue spécifique d'erreur qui affichera le message à l'utilisateur
     // La vue aura accès à $titrePage et $messageErreur
 }
+
+
+
+// Fonction PHP	Description
+// gererErreur()	Fonction personnalisée appelée pour gérer les erreurs selon un code.
+// $_GET['...'] ?? valeur	Récupère un paramètre GET ou retourne une valeur par défaut.
+// require_once()	Importe la vue d’erreur (vue404.php) une seule fois pour l’affichage.
+// isset()	(Implicite dans ??) : Vérifie si une clé existe dans un tableau.
+// [...]	Accès à un tableau associatif pour récupérer un message selon un code.

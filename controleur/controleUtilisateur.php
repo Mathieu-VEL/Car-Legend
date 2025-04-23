@@ -194,3 +194,27 @@ function redirigerAvecMessage($page, $message)
     // Termine le script après la redirection, évitant l'exécution du reste du code
     exit;
 }
+
+
+
+
+
+// Fonction PHP Description
+// require_once()	Inclut le fichier bd.utilisateur.php contenant les fonctions de gestion utilisateur
+// session_start()	Démarre une session PHP si aucune n’est active
+// session_status()	Vérifie l’état actuel de la session
+// isset()	Vérifie la présence d’une variable
+// $_SESSION	Utilise les données de session (utilisateur, messages)
+// $_GET / $_POST / $_FILES	Récupère les données envoyées par URL, formulaire ou fichier
+// trim()	Supprime les espaces en début et fin de chaîne
+// htmlspecialchars()	Empêche les injections XSS dans les champs texte
+// header("Location: ...")	Redirige l’utilisateur vers une autre page
+// exit	Termine immédiatement l’exécution du script
+// pathinfo(..., PATHINFO_EXTENSION)	Récupère l’extension du fichier téléchargé
+// strtolower()	Convertit une chaîne en minuscules (ex : extension de fichier)
+// in_array()	Vérifie si une valeur existe dans un tableau (ex : extension autorisée)
+// mime_content_type()	Vérifie le type MIME réel d’un fichier téléchargé
+// uniqid()	Génère un nom de fichier unique pour éviter les doublons
+// move_uploaded_file()	Déplace un fichier téléchargé vers un dossier cible
+// session_destroy()	Supprime toutes les données de session (déconnexion + suppression compte)
+// include()	Inclut la bonne vue (vueProfil.php ou vueParametres.php)

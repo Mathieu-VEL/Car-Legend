@@ -100,3 +100,14 @@ function supprimerAnnonceAdmin($id)
     // Interrompt immédiatement le script pour éviter toute exécution après la redirection
     exit;
 }
+
+
+
+// Fonction PHP	Description
+// session_status()	Vérifie l’état actuel de la session (active, inactive…).
+// session_start()	Démarre une nouvelle session ou reprend une session existante.
+// require_once()	Inclut un fichier PHP externe une seule fois (même si l’appel est répété).
+// isset()	Vérifie si une variable est définie et non nulle.
+// intval()	Convertit une valeur en entier (utilisé pour sécuriser l’ID dans l’URL).
+// header()	Envoie un en-tête HTTP brut (ici utilisé pour rediriger vers une autre page).
+// exit	Interrompt immédiatement l’exécution du script PHP.

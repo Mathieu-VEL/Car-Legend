@@ -9,3 +9,8 @@ require_once("config.php"); // Inclusion du fichier de configuration global cont
 // Inclusion de la vue du formulaire de connexion admin
 // Cela affichera le formulaire HTML pour permettre à un administrateur de se connecter
 include(RACINE . "/vue/admin/vueConnexionAdmin.php");
+
+
+// Fonction PHP	Description
+// session_status()	Vérifie l’état actuel de la session (active ou non).
+// session_start()	Démarre une nouvelle session ou reprend une session existante.

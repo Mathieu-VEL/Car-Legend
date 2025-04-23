@@ -122,3 +122,17 @@ function afficherFavoris($idUtilisateur)
     // Affiche la vue contenant la liste des favoris paginés
     include(RACINE . "/vue/annonce/vueFavoris.php");
 }
+
+
+
+// Fonction PHP	   Description
+// require_once()	Inclut les fichiers nécessaires une seule fois (fonctions modèle, vues, etc.)
+// $_SESSION[...]	Accède aux données de session (utilisateur connecté)
+// $_GET[...]	Récupère les paramètres de l’URL (action, id, p)
+// isset()	Vérifie l’existence de clés dans un tableau ($_GET, $_SESSION)
+// intval()	Convertit une valeur en entier pour sécuriser les ID
+// max()	Définit une valeur minimale (ici 1) pour éviter les pages < 1
+// ceil()	Calcule le nombre total de pages à partir du total de favoris
+// header("Location: ...")	Redirige l’utilisateur vers une autre page (après ajout ou suppression)
+// exit	Stoppe l’exécution du script immédiatement
+// include()	Inclut le fichier de vue (ex : vueFavoris.php)

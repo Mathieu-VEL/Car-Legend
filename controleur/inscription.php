@@ -82,3 +82,20 @@ function afficherVueInscription()
     // Cela permet d'afficher le formulaire d'inscription sur la page de l'utilisateur.
     require(RACINE . "/vue/utilisateur/vueInscription.php");
 }
+
+
+
+
+// Fonction PHP	Description
+// session_status()	Vérifie si une session est déjà active
+// session_start()	Démarre une session pour stocker des données côté serveur
+// require_once()	Inclut un fichier une seule fois
+// $_SERVER["REQUEST_METHOD"]	Vérifie si la requête est de type POST (formulaire soumis)
+// $_POST, $_GET, $_SESSION	Accès aux données envoyées par formulaire, URL, ou stockées en session
+// trim()	Supprime les espaces en début et fin de chaîne
+// htmlspecialchars()	Protège contre les attaques XSS (balises HTML dans les inputs)
+// password_hash()	Hache le mot de passe de manière sécurisée
+// preg_match()	Vérifie la complexité du mot de passe avec une expression régulière
+// header("Location: ...")	Redirige vers une autre page
+// exit	Arrête le script PHP immédiatement
+// require()	Inclut un fichier (vueInscription.php ici)

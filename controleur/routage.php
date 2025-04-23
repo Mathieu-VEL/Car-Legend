@@ -11,8 +11,8 @@ function redirigeVers()
         "connexionAdmin"  => "connexionAdmin.php",        // Page de connexion pour l'admin
         "inscription"     => "inscription.php",           // Page d'inscription
         "deconnexion"     => "deconnexion.php",           // Page de déconnexion
-        "profil"          => "controleUtilisateur.php",  // Page du profil utilisateur
-        "parametres"      => "controleUtilisateur.php",  // Page des paramètres utilisateur
+        "profil"          => "controleUtilisateur.php",   // Page du profil utilisateur
+        "parametres"      => "controleUtilisateur.php",   // Page des paramètres utilisateur
         "annonces"        => "controleAnnonce.php",       // Page des annonces
         "mesAnnonces"     => "controleAnnonce.php",       // Page des annonces de l'utilisateur
         "ajouterAnnonce"  => "controleAnnonce.php",       // Page pour ajouter une annonce
@@ -53,3 +53,13 @@ function redirigeVers()
     header("Location: index.php?page=erreur&code=404");
     exit;
 }
+
+
+
+// Fonction PHP	Description
+// $_GET	Récupère les données envoyées via l’URL (paramètre page ici)
+// __DIR__	Donne le chemin absolu du dossier courant (utile pour les chemins de fichier)
+// array_key_exists()	Vérifie si une clé existe dans un tableau (ici dans $routes)
+// file_exists()	Vérifie si un fichier existe physiquement sur le serveur
+// header("Location:")	Redirige l’utilisateur vers une autre page avec le protocole HTTP
+// exit	Termine immédiatement l’exécution du script PHP
