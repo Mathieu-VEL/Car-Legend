@@ -13,9 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Remplace l’URL actuelle dans l’historique sans recharger la page
     window.history.replaceState(
-      {}, // 1er param : objet d’état (pas utilisé ici)
-      document.title, // 2e param : garde le titre actuel de l’onglet
-      cleanUrl.endsWith("?") // 3e param : si l’URL se termine par ? (aucun param restant)
+      document.title, // 1er param : garde le titre actuel de l’onglet
+      cleanUrl.endsWith("?") // 2e param : si l’URL se termine par ? (aucun param restant)
         ? cleanUrl.slice(0, -1) // alors on retire le ? final inutile
         : cleanUrl // sinon on conserve l’URL telle quelle
     );

@@ -14,7 +14,7 @@ function afficherPopup(message, type = "info") {
     alerte.appendChild(texte); // Ajoute le paragraphe dans le bloc d’alerte
   }
 
-  // ✏️ Injecte le texte du message (ou un message par défaut s'il est vide)
+  // Injecte le texte du message (ou un message par défaut s'il est vide)
   texte.textContent = message || "Une erreur inconnue est survenue.";
 
   // Supprime toutes les classes de style précédentes pour éviter les conflits
@@ -37,7 +37,7 @@ function afficherPopup(message, type = "info") {
       break;
   }
 
-  // ⏱Attends 3 secondes avant de masquer automatiquement le message
+  // Attends 3 secondes avant de masquer automatiquement le message
   setTimeout(() => {
     // On retire toutes les classes de style
     alerte.classList.remove("show", "success", "error", "info");
