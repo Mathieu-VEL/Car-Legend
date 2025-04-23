@@ -2,7 +2,7 @@
 if (typeof PLACEHOLDER_URL === "undefined") {
   // Vérifie si la variable PLACEHOLDER_URL n’a pas encore été définie dans un autre script
   // Cela évite de redéfinir cette variable s’il y a plusieurs fichiers JS chargés
-  var PLACEHOLDER_URL = "/projet-final/asset/images/placeholder.jpg";
+  var PLACEHOLDER_URL = "asset/images/placeholder.jpg";
   // Déclare une variable globale contenant le chemin de l’image par défaut
   // Cette image est utilisée pour remplacer une image supprimée dans l’aperçu
 }
