@@ -32,3 +32,12 @@ function connexionPDO()
         return null;
     }
 }
+
+
+// function connexionPDO()	Déclare une fonction personnalisée pour créer une connexion PDO à la base de données.
+// new PDO()	Crée une nouvelle instance PDO pour se connecter à une base MySQL avec un DSN.
+// array()	Crée un tableau (ici pour les options PDO comme forcer l’UTF-8 à la connexion).
+// setAttribute()	Configure des attributs sur l’objet PDO (ex: lever des exceptions en cas d’erreur SQL).
+// return	Renvoie une valeur (ici un objet PDO ou null si la connexion échoue).
+// catch (PDOException)	Attrape une erreur levée par PDO lors de la tentative de connexion.
+// error_log()	Écrit un message d’erreur dans les logs serveur, sans afficher de message à l’utilisateur.

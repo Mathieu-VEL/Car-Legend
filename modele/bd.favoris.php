@@ -190,3 +190,20 @@ function countFavorisUtilisateur($idUtilisateur)
         return 0;
     }
 }
+
+
+// Élément PHP	Utilisation dans ce fichier
+// connexionPDO()	Ouvre une connexion sécurisée à la base via PDO (définie dans bd.php)
+// $bdd->prepare()	Prépare une requête SQL avec des paramètres nommés
+// $stmt->bindValue()	Lie une valeur à un paramètre dans une requête préparée
+// $stmt->bindParam()	Lie une variable (référence) à un paramètre dans une requête préparée
+// $stmt->execute()	Exécute une requête SQL préparée avec les valeurs liées
+// $stmt->fetch()	Récupère la première ligne du résultat (ou false si aucune trouvée)
+// $stmt->fetchAll()	Récupère toutes les lignes de résultats en tableau associatif
+// $stmt->fetchColumn()	Récupère une seule valeur (colonne) du premier résultat (ex: COUNT(*))
+// PDO::PARAM_INT	Spécifie que le paramètre est un entier
+// PDO::FETCH_ASSOC	Définit le format des résultats sous forme de tableau associatif
+// error_log()	Enregistre un message d’erreur dans les logs du serveur
+// INSERT IGNORE INTO	Insère une ligne seulement si elle n’existe pas déjà (évite doublons)
+// INNER JOIN / JOIN	Jointure entre favoris et annonce pour croiser les données
+// ORDER BY / LIMIT / OFFSET	Trie et limite les résultats pour la pagination

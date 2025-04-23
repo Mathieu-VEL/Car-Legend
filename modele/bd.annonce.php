@@ -393,3 +393,22 @@ function nettoyerImagesOrphelines($cheminDossier = "asset/photos/")
         // En cas d’échec, retourne 0 suppression
     }
 }
+
+// Élément PHP	Utilisation dans ce fichier
+// connexionPDO()	Connexion à la base de données via PDO (définie dans bd.php)
+// try { } catch (PDOException)	Gestion des erreurs SQL (connexion ou requête)
+// $bdd->prepare()	Préparation d’une requête SQL sécurisée
+// $req->bindParam()	Lier une variable à un paramètre de requête (type précisé)
+// $req->bindValue()	Lier directement une valeur à un paramètre (type précisé)
+// $req->execute()	Exécuter une requête préparée
+// $req->fetch() / fetchAll()	Récupérer un ou plusieurs résultats de la requête
+// PDO::FETCH_ASSOC	Retourne les résultats sous forme de tableau associatif
+// PDO::PARAM_INT	Spécifie que la valeur liée est un entier
+// error_log()	Enregistre un message d’erreur dans les logs du serveur
+// basename()	Extrait le nom de fichier depuis un chemin complet
+// file_exists() / is_file()	Vérifie la présence ou la nature d’un fichier
+// unlink()	Supprime physiquement un fichier du serveur
+// scandir()	Liste tous les fichiers présents dans un dossier
+// array_diff()	Retire des éléments d’un tableau par comparaison avec un autre tableau
+// __DIR__	Donne le chemin absolu du dossier courant (utile pour les chemins serveurs)
+// fetchColumn()	Récupère une seule valeur depuis une requête SQL (ex : COUNT(*))

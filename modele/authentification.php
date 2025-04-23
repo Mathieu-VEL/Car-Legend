@@ -41,3 +41,20 @@ function redirigerSiNonAdmin()
         exit; // Arrêt du script
     }
 }
+
+
+
+// Élément PHP	Rôle
+// function nomFonction()	Déclaration d’une fonction utilisateur
+// connexionPDO()	Fonction personnalisée de connexion à la base (définie dans bd.php)
+// try { ... } catch (PDOException)	Gestion des exceptions liées à PDO
+// $bdd->prepare()	Prépare une requête SQL sécurisée avec PDO
+// $req->execute()	Exécute une requête préparée avec des paramètres
+// $req->fetch(PDO::FETCH_ASSOC)	Récupère une ligne de résultat sous forme de tableau associatif
+// password_verify()	Vérifie si un mot de passe correspond à un hash stocké
+// return	Renvoie une valeur depuis une fonction
+// isset()	Vérifie si une variable est définie et non nulle
+// $_SESSION	Superglobale contenant les données de session
+// header()	Redirige vers une autre page
+// exit	Interrompt immédiatement le script PHP
+// error_log()	Enregistre un message dans le fichier de logs du serveur

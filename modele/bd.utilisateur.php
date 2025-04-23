@@ -160,3 +160,16 @@ function getUtilisateurParId($id)
         return null;
     }
 }
+
+
+
+// Fonction PHP	Description
+// require_once()	Inclut une seule fois le fichier bd.php (connexion à la BDD).
+// connexionPDO()	Fonction perso qui retourne un objet PDO connecté à la base carlegend.
+// prepare()	Prépare une requête SQL pour sécuriser contre les injections SQL.
+// execute()	Exécute une requête préparée avec les paramètres donnés.
+// fetch()	Récupère une ligne de résultat sous forme de tableau associatif.
+// fetchAll()	Récupère toutes les lignes de résultats sous forme de tableau associatif.
+// query()	Exécute une requête SQL directe (non préparée).
+// error_log()	Écrit un message dans les logs serveur (utile pour débogage d’erreurs SQL).
+// CURDATE()	(Fonction SQL) utilisée dans l’insertion pour obtenir la date actuelle (date_inscription).

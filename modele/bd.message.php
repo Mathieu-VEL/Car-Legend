@@ -172,3 +172,14 @@ function existeConversation($idAnnonce, $id1, $id2)
         return false; // Retourne false en cas d'erreur (pas de conversation)
     }
 }
+
+
+// Fonction PHP	Description
+// require_once()	Inclut un fichier une seule fois (ici, bd.php pour la connexion à la BDD).
+// connexionPDO()	Fonction définie dans bd.php, qui retourne un objet PDO pour se connecter à la base.
+// prepare()	Prépare une requête SQL sécurisée avec des paramètres nommés (:param) pour éviter les injections.
+// execute()	Exécute la requête préparée avec un tableau de valeurs associées aux paramètres SQL.
+// fetch()	Récupère la première ligne du résultat SQL sous forme de tableau associatif.
+// fetchAll()	Récupère toutes les lignes du résultat sous forme de tableau associatif.
+// fetchColumn()	Récupère la valeur de la première colonne de la première ligne du résultat (souvent un COUNT).
+// error_log()	Enregistre un message d’erreur dans les logs du serveur (utile en cas d’erreur SQL).

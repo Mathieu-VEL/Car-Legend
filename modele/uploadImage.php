@@ -66,3 +66,20 @@ function getAvatarUrl($avatar)
     return file_exists($path) ? $path : "asset/images/placeholder.jpg";
     // Si le fichier existe, on retourne son chemin ; sinon on retourne le placeholder
 }
+
+
+
+// Fonction PHP	Description
+// isset()	Vérifie si une variable est définie et non nulle (ici : si un fichier a été uploadé).
+// $_FILES[]	Variable superglobale contenant les infos sur les fichiers envoyés via formulaire.
+// UPLOAD_ERR_OK	Constante PHP indiquant qu’un fichier a été uploadé sans erreur.
+// pathinfo()	Récupère les infos d’un chemin de fichier (ici l’extension).
+// strtolower()	Convertit une chaîne en minuscules (pour standardiser l’extension).
+// in_array()	Vérifie si une valeur existe dans un tableau (extensions ou MIME autorisés).
+// mime_content_type()	Retourne le type MIME réel d’un fichier (ex : image/jpeg).
+// uniqid()	Génère un identifiant unique (ici pour nommer le fichier uploadé).
+// move_uploaded_file()	Déplace un fichier uploadé vers un autre dossier sur le serveur.
+// basename()	Retourne le nom d’un fichier sans son chemin (sécurité contre les chemins relatifs).
+// file_exists()	Vérifie si un fichier existe sur le disque.
+// error_log()	Écrit une erreur dans le fichier de log PHP (utile pour débogage).
+// Throwable	Classe mère de toutes les exceptions PHP (permet de capturer toute erreur).
